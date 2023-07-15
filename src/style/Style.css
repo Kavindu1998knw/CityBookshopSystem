@@ -1,0 +1,61 @@
+.navigationButton{
+    -fx-background-color:#0a9ccd;
+    -fx-border-color:#f5f5f5;
+    -fx-border-width:2px;
+    -fx-border-radius:20px 0px 0px 20px;
+    -fx-background-radius:20px 0px 0px 20px;
+}
+
+.navigationBackground{
+     -fx-background-color:#f5f5f5;
+}
+
+.backgroundColor{
+    -fx-background-color:#f5f5f5;
+}
+
+.table-view {
+    -fx-background-color: #7827e6;
+    -fx-background-radius: 20px 20px 0 0;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #7827e6;
+    -fx-background-radius:20;
+    -fx-background-insets: 0 0 10 0;
+}
+
+.table-view .column-header, .table-view .filler{
+    -fx-size:40px;
+    -fx-border-width: 0 0 10 0;
+    -fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}
+
+.table-row-cell {
+    -fx-background-color: #aa4ff6;
+}
+
+.table-cell {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #8d39ec;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #8d39ec;
+}
+
+.table-row-cell.empty-row {
+    -fx-background-color: white;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="720.0" prefWidth="1280.0" styleClass="navigationBackground" stylesheets="@../style/Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerController">
+   <children>
+      <VBox prefHeight="222.0" prefWidth="200.0" AnchorPane.bottomAnchor="298.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1080.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <JFXButton fx:id="btnCashierManage" onAction="#btnCashiersManageOnAction" prefHeight="45.0" prefWidth="200.0" styleClass="navigationButton" stylesheets="@../style/Style.css" text="Cashiers Manage" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnBooks" onAction="#btnBooksOnAction" prefHeight="45.0" prefWidth="200.0" styleClass="navigationButton" stylesheets="@../style/Style.css" text="Books" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDeletedBooks" onAction="#btnDeletedBooksOnAction" prefHeight="45.0" prefWidth="200.0" styleClass="navigationButton" stylesheets="@../style/Style.css" text="Deleted Books" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="btnBillHistory" onAction="#btnBillHistory" prefHeight="45.0" prefWidth="200.0" styleClass="navigationButton" stylesheets="@../style/Style.css" text="Bill History" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+         </children>
+      </VBox>
+      <StackPane fx:id="subRoot" layoutX="200.0" layoutY="159.0" prefHeight="150.0" prefWidth="200.0" style="-fx-background-color: #f5f5f5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Separator layoutX="197.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="0.0" />
+      <Button layoutX="122.0" layoutY="667.0" mnemonicParsing="false" onAction="#btnLogOutOnAction" style="-fx-background-color: red;" text="Log Out" textFill="WHITE" AnchorPane.bottomAnchor="23.0" AnchorPane.leftAnchor="122.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="imgLogo" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+   </children>
+</AnchorPane>
